@@ -6,11 +6,13 @@
  - flask-migrate
  
 # Criação
-```$mkdir botanico```
-```$cd botanico```
-```$python -m venv venv```
-```$pip install flask```
-```$pip install python-dotenv```
+```python
+$mkdir botanico
+$cd botanico
+$python -m venv venv
+$pip install flask
+$pip install python-dotenv
+```
 
 # Flaskenv
 $touch .flaskenv
