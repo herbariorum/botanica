@@ -1,0 +1,183 @@
+@font-face {
+		font-family: 'Sucrose Bold Two';
+		src: url('../font/sucrose.woff2') format('woff2');
+		}
+@font-face {
+    font-family: 'IM Fell French Canon Pro';
+    src: url('../font/im-fell-french-canon-pro.woff2') format('woff2');
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mountain-range.jpg") no-repeat; */
+	background: url("/../image/header-logo.png") no-repeat;
+  padding-top: 61.9333333 %;
+  background-size: cover;
+  font-family: 'Sucrose Bold Two';
+  height: 170px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
+
+header h1 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+}
+
+header h1 span {
+  display: block;
+  font-size: 2.75vw;
+}
+
+.container {
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	margin: 20px;
+	width: auto;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - 35vh);
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+@media all and (max-width: 400px){
+  main {padding: 2rem;}
+}
+
+main > article {
+  flex: 1;
+  padding: 0.2rem 3%;
+}
+
+
+main > aside {
+  flex: 0 0 20vw;
+}
+
+
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+
+h1, h3, h3, h4 {
+  line-height: normal;
+  word-wrap: break-word;
+  color: #000;
+}
+
+.sidebar {
+  display: block;
+	font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  width: 25%;
+}
+
+.sidebar {
+	background-color: #f4f4f4;
+	margin-bottom: 40px;
+	border-radius: 0 0 3px 3px;
+}
+
+.sidebar .card h4 {
+	background: #4F78A4;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0;
+	padding: 12px 15px 10px;
+	text-align: center;
+	letter-spacing: 0.3px;
+	border-radius: 3px 3px 0 0;
+}
+
+.sidebar .card ol {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+.sidebar .card ol li {
+	position: relative;
+	border-bottom: 1px solid #e9e9e9;
+	padding: 7px 20px 17px;
+}
+
+.sidebar .card ol li::before {
+  content: "\2713";
+	font-family: FontAwesome;
+	color: #454545;
+	font-size: 13px;
+	font-weight: 700;
+	position: absolute;
+	top: 23px;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+}
+
+.sidebar .card .title {
+	font-size: 13px;
+	margin-bottom: 0;
+	padding-left: 35px;
+	margin-top: 14px;
+}
+
+
+a, a:active, a:hover, a:focus {
+  text-decoration: none;
+  color: #4F78A4;
+}
+
+footer {
+  height: 10vh;
+  background:rgba(0, 0, 0, 0.75);
+  border:1px solid #111;
+   box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+   text-align: center;
+   font: 700 1rem Roboto, Arial, Helvetica, Sans-serif;
+	color: #f2f2f2;
+}

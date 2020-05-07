@@ -1,0 +1,42 @@
+{%- extends "base.html" %}
+{% block html_attribs %} lang="en"{% endblock %}
+
+{% block pagestyles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css')}}">
+{% endblock %}
+
+{% block container %}
+
+<header>
+  <h1>Minhas <span>impressões sobre</span> botância</h1>
+
+  <div class="container">
+    <div class="topnav">
+      <a href="#"><i class="fa fa-edit"></i> Sobre</a>
+      <a href="#"><i class="fa fa-envelope"></i> Contato</a>
+    </div>
+  </div>
+</header>
+<main>
+  <article class="artigos">
+    <h2>Primeiro Artigo</h2>
+  </article>
+
+  <aside class="sidebar">
+    <div class="card">
+        <h4>Categorias</h4>
+        <ol>
+          <li>
+            <h2 class="title"><a href="#">Fotos</a></h2>
+          </li>
+          <li>
+            <h2 class="title"><a href="#">Fotos</a></h2>
+          </li>
+        </ol>
+    </div>
+  </aside>
+</main>
+<footer>Feito por Elias Gomes</footer>
+{% endblock %}
