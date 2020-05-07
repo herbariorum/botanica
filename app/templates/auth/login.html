@@ -1,0 +1,18 @@
+{%- extends "base.html" %}
+{% block html_attribs %} lang="en"{% endblock %}
+
+{% block pagestyles %}
+  {{ super() }}
+  <link rel="stylesheet" href="/css/login.css">
+{% endblock %}
+
+{% block container %}
+
+<h1>Login</h1>
+<div class="form">
+  <input type="text" name="email" autocomplete="off" required>
+  <label for="email" class="label">
+    <span class="content-label">Email</span>
+  </label>
+</div>
+{% endblock %}

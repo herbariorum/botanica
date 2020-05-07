@@ -1,0 +1,12 @@
+__pycache__/
+
+*.log
+*.sqlite3
+
+env/
+venv/
+ENV/
+VENV/
+
+database/
+migrations/

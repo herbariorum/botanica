@@ -1,0 +1,49 @@
+{%- extends "base.html" %}
+{% block html_attribs %} lang="en"{% endblock %}
+
+{% block pagestyles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css')}}">
+{% endblock %}
+
+{% block container %}
+
+<header>
+  <h1>Minhas <span>impressões sobre</span> botância</h1>
+  <div class="container">
+    <div class="topnav">
+      <a href="#"><i class="fa fa-edit"></i> Sobre</a>
+      <a href="#"><i class="fa fa-envelope"></i> Contato</a>
+    </div>
+  </div>
+</header>
+<main>
+    <article class="artigos">
+      <h2>Meu artigo</h2>
+
+    </article>
+
+
+  <div class="atividades">
+    <div class="msup">
+      <h2>Mais artigos</h2>
+    </div>
+    <div class="band">
+       {% for post in posts %}
+        <div class="item-{{post.id}}">
+           <a href="" class="card">
+            <div class="thumb" style="background-image: url({{ url_for('static', filename='image/'+post.thumb) }});"> </div>
+             <article>
+               <h1>{{ post.title }}</h1>
+               <p>{{ post.body }}</p>
+               <span>{{ post.author.username }}</span>
+             </article>
+           </a>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</main>
+<footer>Feito por Elias Gomes</footer>
+{% endblock %}
